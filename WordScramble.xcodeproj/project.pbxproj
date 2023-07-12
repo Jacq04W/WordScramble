@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		5E756E012A5E092600EBA866 /* WordScrambleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E756E002A5E092600EBA866 /* WordScrambleApp.swift */; };
-		5E756E032A5E092600EBA866 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E756E022A5E092600EBA866 /* ContentView.swift */; };
 		5E756E052A5E092700EBA866 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E756E042A5E092700EBA866 /* Assets.xcassets */; };
 		5E756E092A5E092700EBA866 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E756E082A5E092700EBA866 /* Preview Assets.xcassets */; };
 		5E756E132A5E092700EBA866 /* WordScrambleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E756E122A5E092700EBA866 /* WordScrambleTests.swift */; };
 		5E756E1D2A5E092700EBA866 /* WordScrambleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E756E1C2A5E092700EBA866 /* WordScrambleUITests.swift */; };
 		5E756E1F2A5E092700EBA866 /* WordScrambleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E756E1E2A5E092700EBA866 /* WordScrambleUITestsLaunchTests.swift */; };
+		5E756E2C2A5E096900EBA866 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5E756E2B2A5E096900EBA866 /* start.txt */; };
+		5E756E2E2A5E0CEE00EBA866 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E756E2D2A5E0CEE00EBA866 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		5E756DFD2A5E092600EBA866 /* WordScramble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordScramble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E756E002A5E092600EBA866 /* WordScrambleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordScrambleApp.swift; sourceTree = "<group>"; };
-		5E756E022A5E092600EBA866 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5E756E042A5E092700EBA866 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E756E062A5E092700EBA866 /* WordScramble.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WordScramble.entitlements; sourceTree = "<group>"; };
 		5E756E082A5E092700EBA866 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +45,8 @@
 		5E756E182A5E092700EBA866 /* WordScrambleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordScrambleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E756E1C2A5E092700EBA866 /* WordScrambleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordScrambleUITests.swift; sourceTree = "<group>"; };
 		5E756E1E2A5E092700EBA866 /* WordScrambleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordScrambleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5E756E2B2A5E096900EBA866 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
+		5E756E2D2A5E0CEE00EBA866 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +97,9 @@
 		5E756DFF2A5E092600EBA866 /* WordScramble */ = {
 			isa = PBXGroup;
 			children = (
+				5E756E2B2A5E096900EBA866 /* start.txt */,
 				5E756E002A5E092600EBA866 /* WordScrambleApp.swift */,
-				5E756E022A5E092600EBA866 /* ContentView.swift */,
+				5E756E2D2A5E0CEE00EBA866 /* ContentView.swift */,
 				5E756E042A5E092700EBA866 /* Assets.xcassets */,
 				5E756E062A5E092700EBA866 /* WordScramble.entitlements */,
 				5E756E072A5E092700EBA866 /* Preview Content */,
@@ -234,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E756E092A5E092700EBA866 /* Preview Assets.xcassets in Resources */,
+				5E756E2C2A5E096900EBA866 /* start.txt in Resources */,
 				5E756E052A5E092700EBA866 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,7 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E756E032A5E092600EBA866 /* ContentView.swift in Sources */,
+				5E756E2E2A5E0CEE00EBA866 /* ContentView.swift in Sources */,
 				5E756E012A5E092600EBA866 /* WordScrambleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
