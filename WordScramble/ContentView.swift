@@ -32,8 +32,14 @@ struct ContentView: View {
                                Text(word)
                            }
                        }
+                       
+                   }
+                   
+                   Section{
+                       Text("Score")
                    }
                }
+            
                .navigationTitle(rootWord)
             /// this is for when u press done on keyboard
                .onSubmit {
@@ -46,7 +52,14 @@ struct ContentView: View {
                } message: {
                    Text(errorMessage)
                }
-           }
+               .toolbar{
+                   ToolbarItem(placement: .automatic) {
+                       Button("New Game"){
+                           startGame()
+                       }
+                   }
+               }
+        }
         
     }
     
@@ -104,6 +117,16 @@ private extension ContentView {
             wordError(title: "Word not recognized", message: "You can't just make them up, you know!")
             return
         }
+        guard isLong(word: answer) else {
+            wordError(title: "Word too short", message: "Make the word longer gang")
+            return
+            
+        }
+        
+        guard isRoot(word: answer) else {
+            wordError(title: "Words match", message: " Words cant matchb gang")
+            return
+        }
         
         withAnimation{
             usedWords.insert(answer, at: 0)
@@ -137,7 +160,7 @@ private extension ContentView {
     // new code ⚡️
     func isPossible(word: String) -> Bool {
         var tempWord = rootWord
-
+//looping through each letter in the word and we are checkin to see if that letter is in the root word if not return an error
         for letter in word {
             if let pos = tempWord.firstIndex(of: letter) {
                 tempWord.remove(at: pos)
@@ -164,9 +187,22 @@ private extension ContentView {
     }
 
     // new code ⚡️
+    func isLong(word:String) -> Bool {
+        guard word.count >= 3 else {
+            return false
+        }
+    
+        return true
+    }
     
     // new code ⚡️
-    
+    func isRoot(word:String) -> Bool {
+      let root = rootWord
+        guard word != root else {
+            return false
+        }
+        return true
+    }
     // new code ⚡️
     // new code ⚡️
     
