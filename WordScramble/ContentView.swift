@@ -12,6 +12,9 @@ struct ContentView: View {
     @State private var rootWord = ""
     @State private var newWord = ""
     
+    @State private var maxScore = 0
+    @State private var myScore = 0
+
     
     @State private var errorTitle = ""
     @State private var errorMessage = ""
@@ -36,7 +39,7 @@ struct ContentView: View {
                    }
                    
                    Section{
-                       Text("Score")
+                       Text("My score: \(myScore)")
                    }
                }
             
@@ -128,6 +131,11 @@ private extension ContentView {
             return
         }
         
+        guard addScore(root: rootWord, word: answer) else {
+            wordError(title: "Error", message: " CAnt add score")
+            return
+        }
+        
         withAnimation{
             usedWords.insert(answer, at: 0)
         }
@@ -204,6 +212,20 @@ private extension ContentView {
         return true
     }
     // new code ⚡️
+    
+    
+    func addScore(root: String,word:String) -> Bool{
+        let max = root.count
+        maxScore = max
+        
+        print(maxScore)
+        var answer = word.count
+        
+       myScore += answer
+        print(answer)
+
+        return true
+    }
     // new code ⚡️
     
     // new code ⚡️
