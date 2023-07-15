@@ -15,6 +15,11 @@
 		5E756E1F2A5E092700EBA866 /* WordScrambleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E756E1E2A5E092700EBA866 /* WordScrambleUITestsLaunchTests.swift */; };
 		5E756E2C2A5E096900EBA866 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5E756E2B2A5E096900EBA866 /* start.txt */; };
 		5E756E2E2A5E0CEE00EBA866 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E756E2D2A5E0CEE00EBA866 /* ContentView.swift */; };
+		5E756E302A607A9600EBA866 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E756E2F2A607A9600EBA866 /* Animations.swift */; };
+		5E756E322A61E79300EBA866 /* Challenge .swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E756E312A61E79300EBA866 /* Challenge .swift */; };
+		5E756E342A61F98900EBA866 /* TimesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E756E332A61F98900EBA866 /* TimesTableView.swift */; };
+		5E756E362A62452400EBA866 /* NumberList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E756E352A62452400EBA866 /* NumberList.swift */; };
+		5E756E382A624D0900EBA866 /* TimesCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E756E372A624D0900EBA866 /* TimesCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		5E756E1E2A5E092700EBA866 /* WordScrambleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordScrambleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5E756E2B2A5E096900EBA866 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 		5E756E2D2A5E0CEE00EBA866 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5E756E2F2A607A9600EBA866 /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
+		5E756E312A61E79300EBA866 /* Challenge .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Challenge .swift"; sourceTree = "<group>"; };
+		5E756E332A61F98900EBA866 /* TimesTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesTableView.swift; sourceTree = "<group>"; };
+		5E756E352A62452400EBA866 /* NumberList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberList.swift; sourceTree = "<group>"; };
+		5E756E372A624D0900EBA866 /* TimesCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +87,11 @@
 		5E756DF42A5E092600EBA866 = {
 			isa = PBXGroup;
 			children = (
+				5E756E372A624D0900EBA866 /* TimesCard.swift */,
+				5E756E352A62452400EBA866 /* NumberList.swift */,
+				5E756E332A61F98900EBA866 /* TimesTableView.swift */,
+				5E756E2F2A607A9600EBA866 /* Animations.swift */,
+				5E756E312A61E79300EBA866 /* Challenge .swift */,
 				5E756DFF2A5E092600EBA866 /* WordScramble */,
 				5E756E112A5E092700EBA866 /* WordScrambleTests */,
 				5E756E1B2A5E092700EBA866 /* WordScrambleUITests */,
@@ -263,8 +278,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E756E362A62452400EBA866 /* NumberList.swift in Sources */,
+				5E756E382A624D0900EBA866 /* TimesCard.swift in Sources */,
 				5E756E2E2A5E0CEE00EBA866 /* ContentView.swift in Sources */,
 				5E756E012A5E092600EBA866 /* WordScrambleApp.swift in Sources */,
+				5E756E322A61E79300EBA866 /* Challenge .swift in Sources */,
+				5E756E342A61F98900EBA866 /* TimesTableView.swift in Sources */,
+				5E756E302A607A9600EBA866 /* Animations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
