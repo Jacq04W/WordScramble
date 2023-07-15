@@ -20,6 +20,7 @@ struct TimesTableView: View {
 var body: some View {
     ScrollView(.vertical) {
         ZStack {
+            
             LinearGradient(colors: [Color.cyan.opacity(0.7), Color.purple.opacity(0.3)], startPoint: .topLeading, endPoint: .bottomTrailing)
 
             Circle()
@@ -43,48 +44,29 @@ var body: some View {
             VStack{
                 
                 VStack {
-                    Spacer()
-                    Spacer()
-                    Spacer()
-                    Spacer()
-                    Spacer()
+                    ForEach(0..<6){ i in
+                        Spacer()
+                    }
+//
 
                     HStack{
-                        
                         ForEach(QuestionCount.allCases,id: \.self){
                             num in
                         
                             Button{
                                 chooseAmount(amount: num)
                             }
+                            
                         label:{
-                            ZStack{
-                          
-                            LinearGradient(colors: [.red,.yellow], startPoint: .topLeading, endPoint: .bottomTrailing)
-                                .frame(width: 120, height: 100)
-                                .clipShape(RoundedRectangle(cornerRadius: 20))
-                            Text("\(num.rawValue)")
-                                .font(.system(size: 30))
-                                .bold()
-                                .foregroundColor(.black)
+                            topCards(num:num)
                         }
-                        }
-                                
                             
                         }
                        
-                        
-                        
-                        
-                        
                     }
-//                    Spacer()
-                    
-                  
                 }
                 .padding()
-                
-                
+                /// Grid
                 LazyVGrid(columns: columns, alignment: .center, spacing: 4, pinnedViews: []){
                     ForEach(2..<chosenAmount,id: \.hashValue){  num in
                                     
@@ -93,14 +75,7 @@ var body: some View {
                         
                     }
                 }
-                
-                
-                
-                
-                
-        
-        //
-        //        }
+            
             }
         }
     }
@@ -111,6 +86,27 @@ var body: some View {
 
 
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    func topCards(num:QuestionCount) -> some View {
+        ZStack{
+      
+        LinearGradient(colors: [.red,.yellow], startPoint: .topLeading, endPoint: .bottomTrailing)
+            .frame(width: 120, height: 100)
+            .clipShape(RoundedRectangle(cornerRadius: 20))
+        Text("\(num.rawValue)")
+            .font(.system(size: 30))
+            .bold()
+            .foregroundColor(.black)
+        }
+    }
+
     func chooseAmount(amount:QuestionCount){
         switch amount {
         case .five:
